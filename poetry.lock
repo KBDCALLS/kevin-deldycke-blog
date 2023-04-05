@@ -2,24 +2,23 @@
 
 [[package]]
 name = "acme"
-version = "1.32.0"
+version = "2.5.0"
 description = "ACME protocol implementation in Python"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "acme-1.32.0-py3-none-any.whl", hash = "sha256:ea2c5f12aca70c645c205ba0ff024f397a3d2e810bcff560fc0faa2b43b9f393"},
-    {file = "acme-1.32.0.tar.gz", hash = "sha256:c7917e044f4232585c6ce1d46655cf9495bdbe08b0bffac1e4b6f9fa03c9b940"},
+    {file = "acme-2.5.0-py3-none-any.whl", hash = "sha256:416586ed660c5ebcec1e16a134d2e522ac6d6fc4f972955354f0b1a7e61ac97c"},
+    {file = "acme-2.5.0.tar.gz", hash = "sha256:9c760b115c54f55f692321abe5d09f5c70ce437e61f9f22340341621d9909a5a"},
 ]
 
 [package.dependencies]
 cryptography = ">=2.5.0"
 josepy = ">=1.13.0"
-PyOpenSSL = ">=17.5.0"
+PyOpenSSL = ">=17.5.0,<23.1.0 || >23.1.0"
 pyrfc3339 = "*"
 pytz = ">=2019.3"
 requests = ">=2.20.0"
-requests-toolbelt = ">=0.3.0"
 setuptools = ">=41.6.0"
 
 [package.extras]
@@ -1340,21 +1339,6 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
-name = "requests-toolbelt"
-version = "0.10.1"
-description = "A utility belt for advanced users of python-requests"
-category = "dev"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-files = [
-    {file = "requests-toolbelt-0.10.1.tar.gz", hash = "sha256:62e09f7ff5ccbda92772a29f394a49c3ad6cb181d568b1337626b2abb628a63d"},
-    {file = "requests_toolbelt-0.10.1-py2.py3-none-any.whl", hash = "sha256:18565aa58116d9951ac39baa288d3adb5b3ff975c4f25eee78555d89e8f247f7"},
-]
-
-[package.dependencies]
-requests = ">=2.0.1,<3.0.0"
-
-[[package]]
 name = "rich"
 version = "13.3.1"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
@@ -1666,4 +1650,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "31e1988eaba381d867cb0a557d322f3e163e2d42c7bfb58e0d01e328426044b5"
+content-hash = "d2723dce59b85c046687b4277d3788cc223e5c30f4cf0056f6c71af5401607fa"
