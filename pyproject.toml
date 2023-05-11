@@ -36,7 +36,7 @@ pelican-webassets = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 bump2version = "^1.0.1"
-mypy = "^1.0"
+mypy = "^1.3"
 # XXX Use old version of certbot until certbot-s3front supports new version:
 # https://github.com/dlapiduz/certbot-s3front/issues/91
 certbot = "< 2.0.0"
